@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 10;
     width: 100%;
@@ -56,7 +56,7 @@ border-style: none groove none none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 100px 30px 40px 30px;
+    margin: 40px 30px 40px 30px;
 }
 
 .contenido img {
@@ -184,4 +184,63 @@ footer a :hover{
     width: 20px;
     height: 20px;
     margin: 0 20px 0 0;
+}
+
+/* Responsive */
+@media screen and (max-width:750px){
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: sticky;
+        overflow: hidden;
+    }
+    .contenedor  h1{
+        width: 100%;
+        max-width: 300px;
+        padding: 30px;
+        margin: auto;
+    }
+    .contenedor .lista {
+        width: 100%;
+    }
+    .contenedor ul li {
+        margin: auto;
+        border-style: groove none none none;
+    }
+    .linea1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .linea2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .linea3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .linea4 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+    footer div {
+        margin: 10px 10%;
+}
 }
