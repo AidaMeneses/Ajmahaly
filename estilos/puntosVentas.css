@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: white;
@@ -53,7 +53,6 @@ body {
 .encabezado {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
 }
 
 .encabezado h1 {
@@ -159,4 +158,53 @@ footer a :hover{
     width: 20px;
     height: 20px;
     margin: 0 20px 0 0;
+}
+/* Responsive */
+@media screen and (max-width:700px){
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: sticky;
+        overflow: hidden;
+    }
+    .contenedor  h1{
+        width: 100%;
+        max-width: 300px;
+        padding: 30px;
+        margin: auto;
+    }
+    .contenedor .lista {
+        width: 100%;
+    }
+    .contenedor ul li {
+        margin: auto;
+        border-style: groove none none none;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .mapa iframe {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        margin: auto;
+    }
+    .info {
+        border-style: none;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer div {
+        margin: 10px 10%;
+    
+    }
 }
